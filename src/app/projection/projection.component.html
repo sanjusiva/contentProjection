@@ -1,0 +1,7 @@
+<p>projection works!</p>
+<ng-content></ng-content>
+<ng-content select='[role]'></ng-content>
+<div *ngIf="userTemplate">
+    <template [ngTemplateOutlet]="userTemplate"></template>
+</div>
+<!--ngTemplateOutlet directive to render a given <ng-template> element-->
